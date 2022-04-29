@@ -3,9 +3,9 @@
     // INI ファイルの要素を表す
     public enum IniLineType
     {
-        /// <summary>キーと値の組み合わせ</summary>
+        // キーと値の組み合わせ
         KeyValue = 0,
-        /// <summary>コメントなどのテキスト行</summary>
+        // コメントなどのテキスト行
         Text
     }
 }

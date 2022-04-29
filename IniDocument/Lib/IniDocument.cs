@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Takap.Utility
 {
-    /// <summary>
-    /// INIファイルを表します。
-    /// </summary>
+    // INIファイルを表します。
     public class IniDocument
     {
         //
@@ -52,9 +50,7 @@ namespace Takap.Utility
             });
         }
 
-        /// <summary>
-        /// 指定したファイルパスを読み取って内容をロードします。
-        /// </summary>
+        // 指定したファイルパスを読み取って内容をロードします。
         public async Task Load(string filePath, Encoding encoding)
         {
             using (var sr = new StreamReader(filePath, encoding))
@@ -63,9 +59,7 @@ namespace Takap.Utility
             }
         }
 
-        /// <summary>
-        /// 指定したストリームを読み取って内容をロードします。
-        /// </summary>
+        // 指定したストリームを読み取って内容をロードします。
         public async Task Load(StreamReader sr)
         {
             await Task.Run(() =>

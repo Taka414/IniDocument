@@ -3,27 +3,17 @@
     // INIファイル内の要素を表すインターフェース
     public interface IIniElement : IniSection.IInnerIniElement
     {
-        /// <summary>
-        /// オブジェクトの種類を取得します。
-        /// </summary>
+        // オブジェクトの種類を取得します。
         IniLineType Type { get; }
 
-        /// <summary>
-        /// 要素の番号を取得します。
-        /// </summary>
+        // 要素の番号を取得します。
         int Index { get; }
 
-        /// <summary>
-        /// この要素のキーを取得します。
-        /// </summary>
-        /// <remarks>
-        /// テキスト要素の時は何も設定されません。
-        /// </remarks>
+        // この要素のキーを取得します。
+        // テキスト要素の時は何も設定されません。
         string Key { get; }
 
-        /// <summary>
-        /// 要素の値を設定または取得します。
-        /// </summary>
+        // 要素の値を設定または取得します。
         string Value { get; set; }
     }
 }
